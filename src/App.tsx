@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import Nav from './components/Nav';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Manifesto from './components/Manifesto';
-import CollectionGrid from './components/CollectionGrid';
+import EditorialSection from './components/EditorialSection';
+import DigitalSilk from './components/DigitalSilk';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -17,19 +17,19 @@ const App = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          <Nav />
+          <Navbar />
           
           <main>
             <section id="hero">
               <Hero />
             </section>
 
-            <section id="manifesto" className="relative z-10">
-              <Manifesto />
+            <section id="editorial" className="relative z-10">
+              <EditorialSection />
             </section>
 
-            <section id="collection" className="relative z-10 bg-bg">
-              <CollectionGrid />
+            <section id="digital-silk" className="relative z-10 bg-bg">
+              <DigitalSilk />
             </section>
           </main>
 
